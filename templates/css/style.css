@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
+* {
+	font-family: "Work Sans";	
+}
+body {
+	overflow: auto;
+}
+.logo {
+	height: 70px;
+	width: 60px;
+}
+.profile-image {
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	border: 5px solid white;
+}
+.legend {
+	text-align: center;
+	margin: 0 auto;
+}
+.legend a {
+	font-size: 11px;
+	background: #1e87f0;
+	padding: 3px 6px;
+	border-radius: 3px;
+	border: 0;
+	color: #fff;
+	transition: 0.6s all ease-in;
+	box-shadow: 0 0 .5rem rgba(0,0,0,0.2)
+}
+
+.legend a:hover {
+	transform: translateY(-3px);
+}
+.section-links .uk-background-primary, .section-notes .uk-background-primary {
+	color: #fff !important;
+	text-align: center !important;
+	text-transform: capitalize;
+}	
+
+@media screen  and (max-width: 450px) {
+	.uk-navbar-nav a {
+		font-size: 9px !important;
+		float: left;
+	  	display: block;
+	  	color: #fff !important;
+	  	text-align: center;
+	  	text-decoration: none;
+	}
+	.uk-section-primary {
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		overflow: hidden;	
+	}
+	.uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+		min-height: 70px !important;
+		margin-bottom: -20px !important;
+	}
+	.logo {
+		display: none;
+	}
+	.uk-span {
+		font-size: 12px;
+		text-align: center;
+	}
+	.uk-navbar-nav .span-1 {
+		position: relative !important;
+		bottom: 100% !important;
+		left: 50% !important;
+		margin-bottom: 40px !important;
+	}
+	table, .uk-list a {
+	text-transform: capitalize;
+	font-size: 9px;
+	margin-top: 20px !important;
+	}
+
+	.uk-table td, .uk-list-striped > li {
+	    padding: 8px 6px !important;
+	    vertical-align: top;
+	}
+	.section-links .uk-background-primary, .section-notes .uk-background-primary {
+		color: #fff !important;
+		text-align: center !important;
+		font-size: 13px;
+		padding: 5px;
+		text-transform: capitalize;
+		position: fixed;
+		width: 100%;
+		top: 0;	
+	}
+	table.uk-table{
+		margin-top: 50px !important;
+	}
+	ul.uk-list{
+		margin-top: 30px !important;
+	}
+	.links {
+		display: none;
+	}
+}
+a.actives {
+		color: blue !important;
+		
+	}
