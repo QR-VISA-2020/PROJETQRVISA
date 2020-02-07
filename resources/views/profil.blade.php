@@ -26,30 +26,34 @@
             <div class="uk-flex uk-height-medium uk-margin uk-text-center uk-margin-large-top">
                 <div class="uk-margin-auto uk-margin-auto-vertical uk-width-1-2@s">
                     <div class="uk-margin-auto-left uk-margin-auto-horizontal uk-background-primary">
-                        <img  class="profile-image" src="image/craft200.png">
+                        <img  class="profile-image" src="image/avatar.jpg">
                     </div>
                     <hr class="uk-divider-icon">
                     @foreach($etudiants as $etudiant)
-                        @if ($etudiant->MATRICULE ="16A107")
+                        @if ($etudiant->MATRICULE == "16A067")
                         <div class="uk-margin-small-top body">
                             <div class="">
+<!--
                                 <span class="uk-span uk-text-uppercase ">Nom et Prenom</span><br>
+-->
                                 <span class="uk-span uk-text-uppercase uk-text-primary">{{$etudiant->NOM}}</span>
                             </div>
                             <hr class="uk-divider-small">
                             <div class="">   
+<!--
                                 <span class="uk-span uk-text-uppercase ">Matricule</span><br>
+-->
                                 <span class="uk-span uk-text-primary">{{$etudiant->MATRICULE}}</span>
                             </div>
                             <hr class="uk-divider-small">
                             <div>   
-                                <span class="uk-span uk-text-uppercase ">Faculté</span><br>
+<!--                                <span class="uk-span uk-text-uppercase ">Faculté</span><br>-->
                                 <span class="uk-span uk-text-uppercase uk-text-primary">FALSH</span>
                             </div>
                             <hr class="uk-divider-small">
                             <div>   
-                                <span class="uk-span uk-text-uppercase ">langue</span><br>
-                                <span class="uk-span uk-text-uppercase uk-text-primary">{{$etudiant->LANGUE}}</span>
+<!--                                <span class="uk-span uk-text-uppercase ">langue</span><br>-->
+                                <span class="uk-span uk-text-uppercase uk-text-primary">ALL</span>
                             </div>
                         </div>
                         @endif
