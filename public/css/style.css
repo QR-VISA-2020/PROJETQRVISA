@@ -78,8 +78,8 @@ a:hover {
 }
 .body {
 	background-image: url("../image/transparent-logo.png");
-	background-size: cover;
-	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
 	position: relative;
 	margin: 0 auto;
 }
