@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Profile</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- fontawesome import-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--import font from google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="css/uikit.min.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <script src="js/uikit.min.js"></script>
-        <script src="js/uikit-icons.min.js"></script>
-    </head>
-    <body>
-
+@extends('layourt')
+@section('content')
         <!--navigtion bar-->
         <div class="">
             <div>
@@ -22,10 +7,10 @@
                     <div class="center-div">
                         <ul class="">
                             <li>                               
-                                <a href="profil.html" class="actives"><i class="fa fa-user"></i><br>profil scolaire</a>
+                                <a href="profil.html" class="actives"><i class="fa fa-user"></i><br>Profil </a>
                             </li>
                             <li>                               
-                                <a href="profil_academique.html"> <i class="fa fa-list"></i><br>notes scolaire</a>
+                                <a href="profil_academique.html"> <i class="fa fa-list"></i><br>Notes </a>
                             </li>
                             <li>                        
                                 <a href="lien_utile.html"><i class="fa fa-share"></i><br>Liens utiles</a>
@@ -44,26 +29,32 @@
                         <img  class="profile-image" src="image/craft200.png">
                     </div>
                     <hr class="uk-divider-icon">
-                    <div class="uk-margin-small-top body">
-                        <div class="">
-                            <span class="uk-span uk-text-uppercase uk-text-primary">Kalakala Chien</span>
+                    @foreach($etudiants as $etudiant)
+                        @if ($etudiant->MATRICULE ="16A107")
+                        <div class="uk-margin-small-top body">
+                            <div class="">
+                                <span class="uk-span uk-text-uppercase ">Nom et Prenom</span><br>
+                                <span class="uk-span uk-text-uppercase uk-text-primary">{{$etudiant->NOM}}</span>
+                            </div>
+                            <hr class="uk-divider-small">
+                            <div class="">   
+                                <span class="uk-span uk-text-uppercase ">Matricule</span><br>
+                                <span class="uk-span uk-text-primary">{{$etudiant->MATRICULE}}</span>
+                            </div>
+                            <hr class="uk-divider-small">
+                            <div>   
+                                <span class="uk-span uk-text-uppercase ">Faculté</span><br>
+                                <span class="uk-span uk-text-uppercase uk-text-primary">FALSH</span>
+                            </div>
+                            <hr class="uk-divider-small">
+                            <div>   
+                                <span class="uk-span uk-text-uppercase ">langue</span><br>
+                                <span class="uk-span uk-text-uppercase uk-text-primary">{{$etudiant->LANGUE}}</span>
+                            </div>
                         </div>
-                        <hr class="uk-divider-small">
-                        <div class="">   
-                            <span class="uk-span uk-text-primary">16L238</span>
-                        </div>
-                        <hr class="uk-divider-small">
-                        <div>   
-                            <span class="uk-span uk-text-uppercase uk-text-primary">Falsh</span>
-                        </div>
-                        <hr class="uk-divider-small">
-                        <div>    
-                            <span class="uk-span uk-text-uppercase uk-text-primary">ant</span>
-                        </div>
-                    </div>
+                        @endif
+                    @endforeach
                 </div>
             </div>
         </section>
-    </body>
-</html>
-
+@endsection

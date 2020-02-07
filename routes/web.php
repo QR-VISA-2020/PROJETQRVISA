@@ -11,7 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('profil');
-});
+Route::get('/','SiteController@profil');
+Route::get('/profil','SiteController@profil');
 

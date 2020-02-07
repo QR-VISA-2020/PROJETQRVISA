@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Etudiant;
 
 
 class SiteController extends Controller
@@ -16,6 +17,8 @@ class SiteController extends Controller
      */
     public function profil()
     {
-        return view('profil');
+        $etudiants = Etudiant::all();
+        
+        return view('profil',compact('etudiants'));
     }
 }
