@@ -6,14 +6,14 @@
                 <nav class="navigation">
                     <div class="center-div">
                         <ul class="">
-                            <li>                               
-                                <a href="profil.html" class="actives"><i class="fa fa-user"></i><br>Profil </a>
+                            <li>
+                                <a href="{{url('/profil')}}" class="actives"><i class="fa fa-user"></i><br>profil scolaire</a>
                             </li>
-                            <li>                               
-                                <a href="profil_academique.html"> <i class="fa fa-list"></i><br>Notes </a>
+                            <li>
+                                <a href="{{ url('/profil_academique')}}"> <i class="fa fa-list"></i><br>notes scolaire</a>
                             </li>
-                            <li>                        
-                                <a href="lien_utile.html"><i class="fa fa-share"></i><br>Liens utiles</a>
+                            <li>
+                                <a href="{{url('/lien_utile')}}"><i class="fa fa-share"></i><br>Liens utiles</a>
                             </li>
                         </ul>
                     </div>

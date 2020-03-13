@@ -21,14 +21,14 @@
                 <nav class="navigation">
                     <div class="center-div">
                         <ul class="">
-                            <li>                               
-                                <a href="profil.html" class="actives"><i class="fa fa-user"></i><br>profil scolaire</a>
+                            <li>
+                                <a href="{{url('/profil')}}" ><i class="fa fa-user"></i><br>profil scolaire</a>
                             </li>
-                            <li>                               
-                                <a href="profil_academique.html"> <i class="fa fa-list"></i><br>notes scolaire</a>
+                            <li>
+                                <a href="{{ url('/profil_academique')}}" class="actives"> <i class="fa fa-list"></i><br>notes scolaire</a>
                             </li>
-                            <li>                        
-                                <a href="lien_utile.html"><i class="fa fa-share"></i><br>Liens utiles</a>
+                            <li>
+                                <a href="{{url('/lien_utile')}}"><i class="fa fa-share"></i><br>Liens utiles</a>
                             </li>
                         </ul>
                     </div>
@@ -40,9 +40,7 @@
         <section class="section-notes">
             <div class="uk-background-primary">
                 Profile Academique
-                <div class="uk-margin-auto legend">
-                    <a href="#modal-center" uk-toggle>Legende</a> 
-                </div> 
+
             </div>
             <table class="uk-table uk-table-striped uk-text-center">
                 <thead>
@@ -96,41 +94,13 @@
                         <td>1</td>
                         <td>2018</td>
                     </tr>
-                    <tr>
-                        <td>ant311</td>
-                        <td>50.00</td>
-                        <td>c</td>
-                        <td>ca</td>
-                        <td>1</td>
-                        <td>2018</td>
-                    </tr>
-                    <tr>
-                        <td>ant311</td>
-                        <td>50.00</td>
-                        <td>c</td>
-                        <td>ca</td>
-                        <td>1</td>
-                        <td>2018</td>
-                    </tr>
-                    <tr>
-                        <td>ant311</td>
-                        <td>50.00</td>
-                        <td>c</td>
-                        <td>ca</td>
-                        <td>1</td>
-                        <td>2018</td>
-                    </tr>
-                    <tr>
-                        <td>ant311</td>
-                        <td>50.00</td>
-                        <td>c</td>
-                        <td>ca</td>
-                        <td>1</td>
-                        <td>2018</td>
-                    </tr>
+
                 </tbody>
             </table>
-        </section>  
+            <div class="uk-margin-auto legend">
+                <a href="#modal-center" uk-toggle>Voir la légende</a>
+            </div>
+        </section>
 
         <div id="modal-center" class="uk-flex-top" uk-modal>
             <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">

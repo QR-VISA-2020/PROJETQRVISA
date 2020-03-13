@@ -21,4 +21,16 @@ class SiteController extends Controller
         
         return view('profil',compact('etudiants'));
     }
+    public function lien_utile()
+    {
+
+
+        return view('lien_utile');
+    }
+    public function profil_academique()
+    {
+
+
+        return view('profil_academique');
+    }
 }

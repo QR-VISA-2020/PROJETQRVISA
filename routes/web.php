@@ -13,4 +13,6 @@
 
 Route::get('/','SiteController@profil');
 Route::get('/profil','SiteController@profil');
+Route::get('/lien_utile','SiteController@lien_utile');
+Route::get('/profil_academique','SiteController@profil_academique');
 
